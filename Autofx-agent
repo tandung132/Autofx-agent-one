@@ -1,0 +1,13 @@
+const express = require('express');
+const router = express.Router();
+const circleClient = require('../services/circleClient');
+const config = require('../config');
+const { initiateDeveloperControlledWalletsClient } = require('@circle-fin/developer-controlled-wallets');
+require('dotenv').config();
+
+function getClient() {
+  return initiateDeveloperControlledWalletsClient({
+    apiKey: process.env.CIRCLE_API_KEY,
+    entitySecret: process.env.CIRCLE_ENTITY_SECRET,
+  });
+}
