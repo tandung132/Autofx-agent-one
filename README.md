@@ -54,7 +54,7 @@ Node.js 18+
 Circle Developer Console account → console.circle.com
 Groq API key (free) → console.groq.com
 1. Clone the repo
-git clone https://github.com/vansham/Autofx-agent.git
+git clone https://github.com/tandung132
 cd Autofx-agent
 2. Backend Setup
 cd Backend
